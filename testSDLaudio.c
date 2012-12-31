@@ -61,6 +61,7 @@ int main(int argc, char** argv)
     gettimeofday(&time4, NULL);
 
     Mix_FreeChunk(wav);
+    SDL_CloseAudio();
     SDL_Quit();
 
     gettimeofday(&time5, NULL);
