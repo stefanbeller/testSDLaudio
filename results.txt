@@ -1,0 +1,32 @@
+
+These commands are run, results are below:
+
+         git clone git://github.com/stefanbeller/testSDLaudio.git
+         cd testSDLaudio
+         gcc testSDLaudio.c -I /usr/include/SDL -lpthread -lSDL -lSDL_mixer -o testSDLaudio
+         wget https://github.com/clintbellanger/flare-game/raw/master/mods/fantasycore/music/cave_theme.ogg
+         ./testSDLaudio cave_theme.ogg
+
+
+Raspberry PI:
+
+init SDL AUDIO takes               163668 microseconds
+loading audio file takes         27910445 microseconds
+playing AUDIO takes             279965769 microseconds
+de-init SDL AUDIO takes            147128 microseconds
+
+
+Dell Latitude E6520 (Intel Core i7):
+
+init SDL AUDIO takes                18159 microseconds
+loading audio file takes           686103 microseconds
+playing AUDIO takes             279969824 microseconds
+de-init SDL AUDIO takes            463708 microseconds
+
+
+Eee PC901 (Intel Atom N270)
+
+init SDL AUDIO takes               125745 microseconds
+loading audio file takes          6391817 microseconds
+playing AUDIO takes             279992647 microseconds
+de-init SDL AUDIO takes            430341 microseconds
